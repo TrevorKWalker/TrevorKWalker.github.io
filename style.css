@@ -22,7 +22,7 @@
     text-align: center;
     
 }
-
+/* Title for the about me section of the home page*/
 #About-Me-Title{
   font-family: verdana, arial;
   text-align: center;
@@ -40,28 +40,12 @@ body{
 
 /* THESE ARE CLASSES*/
 
+
+/*NAVIGATGION BAR*/
+
+/*sets the size of the icons in navigation bar*/
 .icon-size{
-  height: max(1.3vw, 15px)
-}
-.Contact-Icon{
-  position: relative;
-  top: 10px;
-}
-.Green-Box-3px{
-  display: block;
-  margin: auto;
-  align-items: center;
-  width: 15%;
-  background-color: #3a7c16;
-  height: 3px;
-}
-.Background-Image{
-  background-image: url(images/jeju\ orange.jpg);
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center;
-  background-size: cover;
-  
+  height: max(1.3vw, 25px)
 }
 
 /* Sets the backbround for the navigation bar and keeps it in place */
@@ -70,74 +54,14 @@ body{
   border-bottom: solid black 2px;
   display: block;
   position: fixed;
-  height: max(3vw, 35px);
+  z-index: 1;
+  height: max(3vw, 60px);
   top: 0%;
   left:0%;
   width: 100%;
 
 }
-.About-Me-Padding{
-  padding-left: 8%;
-  padding-right: 8%;
-  padding-bottom: 3%;
-  text-align: center;
-}
-.Bold{
-  font-weight: bold;
-}
-/* invisible box that is above main-title to get the right spacing */
-.Box-7vw{
-  height:7vw;
-}
-/* invisible box that is below main-title to get the right spacing */
-.Box-50vw{
-  height: 50vw;
-}
 
-.About-Me-Box{
-  position: relative;
-  top: 30px;
-  border-radius: 20px;
-  background-color: #F7DCB9;
-  margin: auto;
-  border: black 2px solid;
-  color: #3a7c16;
-  align-items: center;
-  width: 35%;
-}
-.Contact-Info{
-  display: flex;
-  position: relative;
-  justify-content: center;
-}
-
-.Contact-Link{
-  text-decoration: none;
-  color: #3a7c16;
-  
-}
-.Contact-Boxes{
-  border: black 2px solid;
-  display: inline-block;
-  border-radius: 20px;
-  background-color: #F7DCB9;
-  color: #3a7c16;
-  width: 15%;
-  text-align: center;
-  margin: 3%;
-  padding-bottom: 2%;
-  font-size: max(1vw, 7px);
-}
-
-
-.down-shift-icon-5px{
-  position: relative ;
-  top: 5px;
-}
-.down-shift-icon-3px{
-  position: relative ;
-  top: 3px;
-}
 /* ensures all content in the navigation bar is centered */
 .Navigation-Content{
   padding-right: 3%;
@@ -160,6 +84,161 @@ body{
   padding-right: 9%;
   text-decoration:none;
   color: #3a7c16;
-  font-size:  max(1.5vw, 20px);
+  font-size:  max(1.5vw, 35px);
   font-weight: bold;
+}
+
+/*shifts the icons in the nav bar down so they are inline with the text*/
+.down-shift-icon-5px{
+  position: relative ;
+  top: 5px;
+}
+.down-shift-icon-3px{
+  position: relative ;
+  top: 3px;
+}
+/*END OF NAVIGATION BAR*/
+
+/*START OF MAIN IMAGE*/
+/* invisible box that is above main-title to get the right spacing */
+.Box-7vw{
+  height:7vw;
+}
+
+/*controls the details of the main large image*/
+.Background-Image{
+  background-image: url(images/jeju\ orange.jpg);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center;
+  background-size: cover;
+  
+}
+/* invisible box that is below main-title to get the right spacing */
+.Box-50vw{
+  height: 50vw;
+}
+/* END OF MAIN IMAGE*/
+
+/* START OF About me and contact BOXES*/
+
+/*Sizing for the icons in the contact boxes*/
+.Contact-Icon{
+  position: relative;
+  top: 10px;
+}
+/* Line that creates spacing in contact boxes */
+.Green-Box-3px{
+  display: block;
+  margin: auto;
+  align-items: center;
+  width: 15%;
+  background-color: #3a7c16;
+  height: 3px;
+}
+
+.About-Me-Padding{
+  padding-left: 8%;
+  padding-right: 8%;
+  padding-bottom: 3%;
+  text-align: center;
+}
+
+.Bold{
+  font-weight: bold;
+}
+
+/* box for the About me section */
+.About-Me-Box{
+  position: relative;
+  top: 30px;
+  border-radius: 20px;
+  background-color: #F7DCB9;
+  margin: auto;
+  border: black 2px solid;
+  color: #3a7c16;
+  align-items: center;
+  width: 35%;
+}
+.Contact-Info{
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+
+.Contact-Link{
+  text-decoration: none;
+  color: #3a7c16;
+  
+}
+/* Boxes for the contact links */
+.Contact-Boxes{
+  border: black 2px solid;
+  display: inline-block;
+  border-radius: 20px;
+  background-color: #F7DCB9;
+  color: #3a7c16;
+  width: 15%;
+  text-align: center;
+  margin: 3%;
+  padding-bottom: 2%;
+  font-size: max(1vw, 7px);
+}
+/* End of About me and Contact boxes*/
+
+/*END OF HOME PAGE*/
+
+/*START OF PROJECTS PAGE*/
+
+.Projects-List{
+  
+  height: 50vw;
+  margin: 5%;
+  margin-top: 7%;  
+}
+
+.Feature-Project{
+  
+  border-radius: 20px;
+  margin: 3%;
+  background-color: #F7DCB9;
+  display: flex;
+  justify-content: center;
+}
+
+.Feature-Project-Picture{
+  border-top-left-radius: inherit;
+  border-bottom-left-radius: inherit;
+  width:40%;
+  border: solid black 2px;
+}
+.Feature-Project-Picture-Image{
+  border-top-left-radius: inherit;
+  border-bottom-left-radius: inherit;
+  object-fit: cover;
+  height:100%;
+  width: 100%;
+}
+.Feature-Project-Text{
+  border-top-right-radius: inherit;
+  border-bottom-right-radius: inherit;  
+  width:60%;
+  border: solid black 2px;
+  color: #3a7c16;
+  border: black solid 2px;
+}
+
+.Feature-Project-Text-Title{
+  text-align: center;
+  font-size: max(1vw, 25px);
+  font-weight:bold;
+}
+.No-Margin{
+  margin-top: 1%;
+  margin-bottom: 0%;
+}
+.Margins-auto{
+  margin: 2.5%;
+  text-align: center;
+  margin-top: 1.5%;
 }
