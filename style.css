@@ -89,24 +89,25 @@ body{
   color: #3a7c16;
   font-size:  max(1.5vw, 35px);
   font-weight: bold;
-  padding-right: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
 
 }
 .Navigation-Button:hover{
-  color: #498628;
-  text-decoration: underline #498628 3px;
+  color: #56aa29;
+  text-decoration: underline #56aa29 3px;
   border-radius: 10px;
   background-color: #F7DCB9;
 }
 .Drop-Title-Button{
   text-decoration:none;
-  color: #3a7c16;
+  color: inherit;
   font-size:  max(1.5vw, 35px);
   font-weight: bold;
 }
 .Drop-Title-Button:hover{
-  color: #498628;
-  text-decoration: underline #498628 3px;
+  color: #56aa29;
+  text-decoration: underline #56aa29 3px;
   border-radius: 10px;
   background-color: #F7DCB9;
 }
@@ -123,25 +124,28 @@ body{
   display:inline-block;
   border:none;
   position: relative;
-  padding-right: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .Drop-Down-Title:hover{
-
+  color: #56aa29;
+  
   background-color: #F7DCB9;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+}
+.Drop-Down-Title:hover .Drop-Title-Button{
+  text-decoration: underline #56aa29 3px;
 }
 .Drop-Down-Title:hover .Drop-Down-Options{
   display:block;
 }
 .Drop-Down-Button{
   text-decoration: none;
-  color: #3a7c16;
+  color: #56aa29;
   font-size: 20px;
 }
-.Drop-Down-Button:hover{
-  text-decoration: underline;
-}
+
 /*shifts the icons in the nav bar down so they are inline with the text*/
 .down-shift-icon-5px{
   position: relative ;
