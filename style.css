@@ -16,7 +16,7 @@
 /* This controls the main title on the home screen */
 #Main-Title{
   
-    color : #fff9df;
+    color : #F7DCB9;
     font-size: max(5.5vw, 50px);
     font-family: verdana, arial;
     text-align: center;
@@ -67,6 +67,7 @@ body{
   padding-right: 3%;
   padding-top: .5%;
   padding-left: 3%;
+  height: max(2.5vw, 45px);
 }
 
 /* makes objects float to right side of screen*/
@@ -79,15 +80,68 @@ body{
   float: left;
 }
 
+.padding-9{
+  padding-right: 9%;
+}
 /* controls spacing and style of the buttons in navigaiton bar */
 .Navigation-Button{
-  padding-right: 9%;
+  text-decoration:none;
+  color: #3a7c16;
+  font-size:  max(1.5vw, 35px);
+  font-weight: bold;
+  padding-right: 20px;
+
+}
+.Navigation-Button:hover{
+  color: #498628;
+  text-decoration: underline #498628 3px;
+  border-radius: 10px;
+  background-color: #F7DCB9;
+}
+.Drop-Title-Button{
   text-decoration:none;
   color: #3a7c16;
   font-size:  max(1.5vw, 35px);
   font-weight: bold;
 }
+.Drop-Title-Button:hover{
+  color: #498628;
+  text-decoration: underline #498628 3px;
+  border-radius: 10px;
+  background-color: #F7DCB9;
+}
+.Drop-Down-Options{
+  display:none;
+  text-decoration: none;
+  background-color: #F7DCB9;
+  border: none;
+  padding: 4%;
+}
+.Drop-Down-Title{
+  text-decoration:none;
+  color: #3a7c16;
+  display:inline-block;
+  border:none;
+  position: relative;
+  padding-right: 20px;
+}
+.Drop-Down-Title:hover{
 
+  background-color: #F7DCB9;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.Drop-Down-Title:hover .Drop-Down-Options{
+  display:block;
+}
+.Drop-Down-Button{
+  text-decoration: none;
+  color: #3a7c16;
+  font-size: 20px;
+}
+.Drop-Down-Button:hover{
+  text-decoration: underline;
+}
 /*shifts the icons in the nav bar down so they are inline with the text*/
 .down-shift-icon-5px{
   position: relative ;
